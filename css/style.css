@@ -244,5 +244,23 @@ img {
 
 
 
+.teksti {
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: white;
+  background-color: #297e97;
+  padding: 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.teksti:hover {
+  background-color: rgba(41, 125, 151, 0.75);
+  cursor: pointer;
+}
   
   /* Erzen Krasniqi */
