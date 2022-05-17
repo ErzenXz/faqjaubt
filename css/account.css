@@ -1,0 +1,90 @@
+
+
+
+h1 {
+    font-size: var(--h1-font-size);
+    padding: 10px;
+}
+
+label {
+    margin-right: 60vw;
+    width: 200px;
+}
+
+.login {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    padding: 30px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;
+}
+
+
+.register {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    padding: 30px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    width: 30%;
+    height: 70%;
+}
+  
+input[type="email"], input[type="password"], input[type="text"], input[type="date"]{
+    width: 25vw;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out 0ms;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="date"]:focus{
+    transform: scale(1.025);
+}
+
+.btn {
+    width: 25vw;
+    height: 5vh;
+    margin-top: 2vh;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out 0ms;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.hidden {
+    display: none;
+    pointer-events: none;
+}
+
+.loginRegisterToggle {
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+}
+  
+.loginRegisterToggle:hover {
+    color:#297e97;
+}

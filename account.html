@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account • eShop</title>
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn-erzen.netlify.app/fonts/Nunito.css" rel="stylesheet">
+    <script defer src="https://cdn-erzen.netlify.app/js/jquery.js"></script>
+    <script defer src="https://kit.fontawesome.com/f45cd9c28c.js" crossorigin="anonymous"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/account.js"></script>
+</head>
+<body onload="savedTheme()">
+    <header>
+        <ul class="blur" id="blur">
+            <li class="list-left"><a href="./index.html" class="fas fa-home" title="Home"></a></li>
+            <li class="list-left"><a href="phones.html" class="fa-solid fa-mobile-screen" title="Phones"></a></li>
+            <li class="list-left"><a href="harta.html" class="fa-solid fa-map-location-dot" title="Harta"></a></li>
+
+            <li class="list-left"><a href="account.html" class="active fa-solid fa-user" title="Account"></a></li>
+            <li class="list-right" id="settings-id"><a id="settingsLogo" onclick="openMenu()" class="fas fa-cog"
+                title="Settings"></a>
+        </li>
+
+        </ul>
+    </header>
+    
+
+
+    <div class="notlogged">
+
+        <div class="login" id="login">
+            <form action="/login.php" id="form1">
+            <h1>Login</h1>
+
+            <label for="email" name="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email address..." required>
+            <br>
+            <label for="password" name="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password..." required>
+            <br>
+            <button class="btn" name="Login" form="login" type="submit" id="bt1">Login</button>
+            <p class="loginRegisterToggle" onclick="toggleLogin(true)">Or create an account.</p>
+        </form>
+        </div>
+
+        <div class="register hidden" id="register">
+            <form action="/register.php" id="form2">
+            <h1>Register</h1>
+            <label for="name" name="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Full name..." required>
+            <br>
+            <label for="email" name="email1">Email</label>
+            <input type="email" name="email1" id="email1" placeholder="Email address..." required>
+            <br>
+            <label for="birthday" name="birthday">Birthdate</label>
+            <input type="date" name="birthday" id="birthday" placeholder="Birthdate..." min="1900-01-01" max="2022-05-11" required>
+            <br>
+            <label for="password" name="password1">Password</label>
+            <input type="password" name="password1" id="password1" placeholder="Password..." required>
+            <br>
+            <button class="btn" name="Register" for="register" type="submit" id="bt2">Register</button>
+            <p class="loginRegisterToggle" onclick="toggleLogin(false)">Already have an account?</p>
+        </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="logged"></div>
+
+
+
+
+
+    <div id="menu" class="menu hidden">
+        <h1>Settings</h1>
+        <label for="theme">Theme:</label>
+
+        <select name="navpos" id="navpos" class="navpos">
+            <option value="light" id="light">Light</option>
+            <option value="dark" id="dark">Dark</option>
+        </select>
+        <br>
+        <br>
+        <label for="navmenu">Navigation menu position:</label>
+
+        <select name="menupos" id="theme">
+            <option value="1" onclick="normalStyle?.()" id="default">Default</option>
+            <option value="2" onclick="centerStyle?.()" id="center">Center</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="textsize">Text size:</label>
+
+        <select name="txtsize" id="text">
+            <option value="default" onclick="dText?.()" id="dtext">Default</option>
+            <option value="scaled" onclick="sText?.()" id="stext">Scaled</option>
+            <option value="big" onclick="bigText?.()" id="btext">Big</option>
+            <option value="massive" onclick="massiveText?.()" id="mtext">Massive</option>
+
+        </select>
+
+        <br>
+        <br>
+
+        <label for="textsize">Color mode:</label>
+
+        <select name="txtsize" id="text">
+            <option value="def" onclick="dcolors?.()" id="def">Default</option>
+            <option value="green" onclick="gforest?.()" id="green">Green Forest</option>
+            <option value="yellow" onclick="ysun?.()" id="yellow">Yellow Sun</option>
+            <option value="apple" onclick="rapple?.()" id="apple">Red Apple</option>
+            <option value="silver" onclick="csilver?.()" id="silver">Silver</option>
+            <option value="gold" onclick="cgold?.()" id="gold">Gold</option>
+            <option value="pink" onclick="cpink?.()" id="pink">Pink</option>
+
+        </select>
+    </div>
+
+
+</body>
+</html>
