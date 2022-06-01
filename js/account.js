@@ -14,3 +14,24 @@ function toggleLogin(value){
         register.classList.add("hidden");
     }
 }
+
+
+
+
+function login(){
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if (email == null || email == undefined || password == null || password == undefined){
+        return false;
+    }
+
+    if (email.toLowerCase().indexOf("@") === -1){
+        return false;
+    }
+
+    if (email == "" || password == ""){
+        return false;
+    }
+
+}

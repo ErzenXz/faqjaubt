@@ -37,16 +37,17 @@
             <form action="/login.php" id="form1">
             <h1>Login</h1>
 
-            <label for="email" name="email">Email</label>
+            <label for="email" name="email2">Email</label>
             <input type="email" name="email" id="email" placeholder="Email address..." required>
             <br>
-            <label for="password" name="password">Password</label>
+            <label for="password" name="password2">Password</label>
             <input type="password" name="password" id="password" placeholder="Password..." required>
             <br>
-            <button class="btn" name="Login" form="login" type="submit" id="bt1">Login</button>
+            <button class="btn" name="Login" form="login" type="submit" id="bt1" onclick="login?.()">Login</button>
             <p class="loginRegisterToggle" onclick="toggleLogin(true)">Or create an account.</p>
-        </form>
+            </form>
         </div>
+
 
         <div class="register hidden" id="register">
             <form action="/register.php" id="form2">
@@ -63,9 +64,9 @@
             <label for="password" name="password1">Password</label>
             <input type="password" name="password1" id="password1" placeholder="Password..." required>
             <br>
-            <button class="btn" name="Register" for="register" type="submit" id="bt2">Register</button>
+            <button class="btn" name="Register" for="register" type="submit" id="bt2" onclick="register?.()">Register</button>
             <p class="loginRegisterToggle" onclick="toggleLogin(false)">Already have an account?</p>
-        </form>
+            </form>
         </div>
 
     </div>
