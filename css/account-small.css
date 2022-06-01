@@ -2,7 +2,6 @@
     --h1-font-size: 40px;
 }
 
-
 h1 {
     font-size: var(--h1-font-size);
     padding: 10px;
@@ -14,34 +13,32 @@ label {
 }
 
 .login {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
+    width: 90vw;
+    margin: auto;
+    height: fit-content;
+    margin-top: 7vh;
+    padding: 10px;
     background-color: aliceblue;
     border: 1px solid lightblue;
     border-radius: 10px;
-    width: 30vw;
-    height: 50%;
 }
 
 
 .register {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 90vw;
+    margin: auto;
+    height: fit-content;
+    margin-top: 1vh;
+    overflow: scroll;
     padding: 30px;
     background-color: aliceblue;
     border: 1px solid lightblue;
     border-radius: 10px;
-    width: 30%;
-    height: 70%;
+
 }
-  
+
 input[type="email"], input[type="password"], input[type="text"], input[type="date"]{
-    width: 25vw;
+    width: 100%;
     height: 40px;
     outline: none;
     padding: 10px;
@@ -58,15 +55,15 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn {
-    width: 25vw;
-    height: 5vh;
+    width: 100%;
+    height: 45px;
     margin-top: 2vh;
     cursor: pointer;
     background-color: white;
     border: 2px solid lightblue;
     border-radius: 10px;
     transition: all 0.3s ease-in-out 0ms;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -91,35 +88,3 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     color:#297e97;
 }
 
-
-@media only screen and (max-width: 1200px) {
-    
-    .login {
-        width: 90vw;
-        margin: auto;
-        height: fit-content;
-        margin-top: 5vh;
-    }
-
-    .register {
-        width: 90vw;
-        margin: auto;
-        height: fit-content;
-        margin-top: 1vh;
-        overflow: scroll;
-    }
-
-    .btn {
-        width: 100%;
-        height: 7vh;
-    }
-
-    .login > input[type="email"], input[type="password"], input[type="text"], input[type="date"]{
-        width: 100%;
-        margin-bottom: 10%;
-    }
-
-    .register > input[type="email"], input[type="password"], input[type="text"], input[type="date"], input[type="email"]{
-        width: 100%;
-    }
-}
